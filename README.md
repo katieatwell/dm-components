@@ -4,6 +4,14 @@
 
 [![NPM](https://img.shields.io/npm/v/dm-components.svg)](https://www.npmjs.com/package/dm-components) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
+## Dev (Components)
+
+[Follow instructions from create-react-library](https://www.npmjs.com/package/create-react-library)
+### Storybook
+```bash
+npm run storybook
+```
+
 ## Install
 
 ```bash
@@ -15,12 +23,12 @@ npm install --save dm-components
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'dm-components'
+import Button from 'dm-components'
 
-class Example extends Component {
+class Button extends Component {
   render () {
     return (
-      <MyComponent />
+      <Button />
     )
   }
 }
