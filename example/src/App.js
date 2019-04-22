@@ -5,7 +5,26 @@ export default class App extends Component {
   render () {
     return (
       <div>
-        <Button text={"Hey"}/>
+        <Button text={"Hey"}
+                type={'large'}></Button>
+
+        <Button isSecondary={true}
+                text={"Hey"}
+                type={'large'}></Button>
+
+        <Button text={"Hey"}
+                type={'small'}></Button>
+
+        <Button isSecondary={true}
+                text={"Hey"}
+                type={'small'}></Button>
+
+        <Button text={"Hey"}
+                type={'flat'}></Button>
+
+        <Button isSecondary={true}
+                text={"Hey"}
+                type={'flat'}></Button>
       </div>
     )
   }

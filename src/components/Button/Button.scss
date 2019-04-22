@@ -1,6 +1,50 @@
-.Button {
-  height: 24px;
+.button {
+  -webkit-font-smoothing: antialiased;
+  font-size: 14px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  margin: 4px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.floating {
+}
+.flat {
+  background-color: transparent;
+  border: none;
+  &.primary {
+    color: get('theme.Button.flat_primary.color');
+  }
+  &.secondary {
+    color: #a5a5a5;
+  }
+}
+.large {
+  height: 70px;
   width: 200px;
-  padding: 24px;
-  border: 2px solid #000;
+  &.primary {
+    background-color: #6a6a6a;
+    color: #fff;
+  }
+  &.secondary {
+    background-color: #fff;
+    border: 1px solid #6a6a6a;
+    color: #6a6a6a;
+  }
+}
+.small {
+  width: 154px;
+  height: 48px;
+  &.primary {
+    background-color: #6a6a6a;
+    color: #fff;
+  }
+  &.secondary {
+    background-color: #fff;
+    border: 1px solid #6a6a6a;
+    color: #6a6a6a;
+  }
 }
